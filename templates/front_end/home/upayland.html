@@ -1,0 +1,404 @@
+{% extends "front_end/base/main.html" %}
+{% load static %}
+{% block content %}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+<style>
+   .social li a, .social a {
+      color:#fff;
+   }
+
+   .telegram{
+      filter: invert(1);
+   }
+   h1.comment:before{
+      color: #fff;
+   }
+      .BuildNow{background:#fbba1f;}
+</style>
+
+<section class="pt-20  font border-0"  >
+
+         <div class="testimonial__inner">
+            <div id="testimonial-slider2" class="owl-carousel">
+
+
+              <div class="testimonial">
+                 <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                       <div class="testimonial_box-top">
+                           <div class="testimonial_box-text">
+                                <video src="https://enefti.modeltheme.com/wp-content/uploads/revslider/metaverse-slider/techvid2.mp4" loop muted autoplay style="border-radius: 13px;  background:linear-gradient(180deg,#000000 0,#000000); width: 100%;  padding: 3px 0;"></video><!--linear-gradient(180deg,#4070f4 0,#050026)-->
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="testimonial">
+                 <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                       <div class="testimonial_box-top">
+                           <div class="testimonial_box-text">
+                              <img src="/static/front_end/cyber2.jpeg" alt="">
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+
+
+
+
+
+
+            </div>
+         </div>
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+         <script>
+
+           $(document).ready(function() {
+             $("#testimonial-slider2").owlCarousel({
+               items: 1,
+               itemsDesktop: [1000, 2],
+               itemsDesktopSmall: [990, 2],
+               itemsTablet: [768, 1],
+               pagination: true,
+               navigation: false,
+               navigationText: ["", ""],
+               slideSpeed: 1000,
+               autoPlay: false
+             });
+           });
+         </script>
+
+
+
+</section>
+
+
+{% comment %}
+<div class="bg-video-wrap mt-20">
+
+    <video src="static/front_end/metaverse.mp4" loop muted autoplay>
+    </video>
+    <div class="overlay">
+    </div>
+
+  </div>
+  <section class=" py-40 font" style="background: linear-gradient(180deg,#4070f4 0,#050026);">
+     <div class="container">
+        <div class="row ">
+           <div class="testimonial__inner">
+              <div id="testimonial-slider2" class="owl-carousel">
+
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                  <video src="static/front_end/video.mp4" loop muted autoplay style="border-radius: 13px;  background:linear-gradient(180deg,#4070f4 0,#050026); width: 100%;  padding: 3px 0;"></video>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/ada1.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/ada2.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/ada3.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/sinema1.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/sinema2.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/sinema3.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/saha1.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/saha2.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/saha3.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="testimonial">
+                   <div class="testimonial_box">
+                      <div class="testimonial_box-inner">
+                         <div class="testimonial_box-top">
+                             <div class="testimonial_box-text">
+                                <img src="/static/front_end/saha4.jpg" alt="">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+
+
+
+
+
+              </div>
+           </div>
+           <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+           <script>
+
+             $(document).ready(function() {
+               $("#testimonial-slider2").owlCarousel({
+                 items: 2,
+                 itemsDesktop: [1000, 2],
+                 itemsDesktopSmall: [990, 2],
+                 itemsTablet: [768, 1],
+                 pagination: true,
+                 navigation: false,
+                 navigationText: ["", ""],
+                 slideSpeed: 1000,
+                 autoPlay: false
+               });
+             });
+           </script>
+        </div>
+     </div>
+
+
+  </section>
+
+
+
+  <section class="py-20" style="background: linear-gradient(180deg,#050026 0,#050026);">
+     <div class="container">
+       <div class="row">
+         <h3 class=" text-6xl mt-4 mb-4 text-white w-100 text-center	titleMobil font"> Hedeflenen Marka Ortaklıkları  </h3>
+
+         <div class="col-md-3 mb-4">
+           <a href="https://www.binance.com/tr" target="_blank">
+           <img src="static/front_end/binance.jpg" class="w-75 mx-auto rounded-lg" title="binanece logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.avax.network/"  target="_blank">
+           <img src="static/front_end/avax.jpg" class="w-75 mx-auto rounded-lg" title="avax logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.kraken.com/tr-tr"  target="_blank">
+           <img src="static/front_end/kraken.jpg" class="w-75 mx-auto rounded-lg" title="kraken logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.disneyplus.com/tr-tr"  target="_blank">
+           <img src="static/front_end/disney.jpg" class="w-75 mx-auto rounded-lg" title="disney logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.mastercard.com.tr/tr-tr.html"  target="_blank">
+           <img src="static/front_end/mastercard.jpg" class="w-75 mx-auto rounded-lg" title="mastercard logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.solanium.io/"  target="_blank">
+           <img src="static/front_end/solanium.jpg" class="w-75 mx-auto rounded-lg" title="solanium logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://coinmarketcap.com/"  target="_blank">
+           <img src="static/front_end/coinmarketcap.jpg" class="w-75 mx-auto rounded-lg" title="coinmarketcap logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.amazon.com.tr/prime"  target="_blank">
+           <img src="static/front_end/amazonprime.jpg" class="w-75 mx-auto rounded-lg" title="amazonprime logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.okx.com/tr"  target="_blank">
+           <img src="static/front_end/okx.jpg" class="w-75 mx-auto rounded-lg" title="okx logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.certik.com/"  target="_blank">
+           <img src="static/front_end/certik.jpg" class="w-75 mx-auto rounded-lg" title="certik logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.sonypictures.com/movies"  target="_blank">
+           <img src="static/front_end/sony.jpg" class="w-75 mx-auto rounded-lg" title="sonyfilm logo">
+           </a>
+         </div>
+         <div class="col-md-3 mb-4">
+           <a href="https://www.huobi.com/tr-tr/"  target="_blank">
+           <img src="static/front_end/huobi.jpg" class="w-75 mx-auto rounded-lg" title="huobi logo">
+           </a>
+         </div>
+
+
+
+
+        </div>
+     </div>
+  </section>
+
+
+  {% endcomment %}
+
+
+    <style media="screen">
+    /*  @media (min-width: 992px){
+       video, source { bottom: -50%; left: 0; position: absolute; }
+
+      }
+      @media (max-width: 991px){
+    .bg-video-wrap {margin:0 !important;}
+
+
+      }
+
+    */
+
+
+      video.bg-video {
+
+        min-height: 100%;
+        width: 50%;;
+        height: auto;
+         z-index: 0;
+         margin:0 auto;
+    }
+    .testimonial_box-top {
+      background:#fff !important;
+      padding:0;
+        height:auto !important;
+    }
+    .testimonial_box{
+      width:100%;
+    }
+    .testimonial{
+      height:auto !important;
+      padding:0 !important;
+    }
+    .testimonial_box-text img{
+      border-radius:0;
+
+        width:100%;
+    }
+    .testimonial_box-text{
+      padding:0;
+      width:100%;
+    }
+
+.testimonial {margin:0;}
+
+    .bg-video-wrap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      background: url(static/front_end/metaverse.mp4) no-repeat center center/cover;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: 2;
+    }
+
+    </style>
+
+
+
+
+
+
+
+{% endblock %}

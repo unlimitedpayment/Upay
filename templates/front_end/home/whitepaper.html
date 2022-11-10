@@ -1,0 +1,348 @@
+{% extends "front_end/base/main.html" %}
+{% load static %}
+{% block content %}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<style>
+   .social li a, .social a {
+      color:#fff;
+   }
+
+   .telegram{
+      filter: invert(1);
+   }
+   h1.comment:before{
+      color: #fff;
+   }
+   .list-group-flush>.list-group-item{
+      background-color: transparent;
+      color:#fff;
+      font-size:13px;
+   }
+   .list-group-item.active {
+    background-color: #2894d2 !important;
+
+}
+/* :is(.col-md-8 ) :is(h1, h2, h3, h4, h5, p ) {
+   color: red !important;
+} */
+   .BuildNow{background:#fbba1f;}
+</style>
+
+
+<section class="py-40">
+   <div class="container-fluid">
+
+      <div class="row">
+         <div class="col-md-4">
+            <div class="left">
+
+               <div class="d-flex flex-column align-items-stretch flex-shrink-0  " >
+
+                  <div class="list-group list-group-flush  border scrollarea">
+                     <a href="#" class="list-group-item border-bottom active list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">UPay'in Genel Bilgileri</strong>
+                       <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                      </div>
+                     </a>
+                     <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Misyon - Vizyon</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Unlimited Payment'ın Genel Açıklaması</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Bahsi Geçen Problemin Nasıl Çözüleceği</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Tokenomic</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Toplanan Yatırım Nasıl Kullanılacak</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Yol Haritası</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Unlimited Payment'ın Hedeflediği Borsa Listelemeleri</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">UPay'in Metaverse Evreni Giriş Yapacağı Sektörler ve Yatırımcıyı Bekleyenler</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item border-bottom list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">UPAYCARD</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+                       <a href="#" class="list-group-item  list-group-item-action py-3 lh-sm">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <strong class="mb-1">Metaverse - NFT</strong>
+                          <small><img src="https://www.svgrepo.com/show/5572/right-arrow.svg"   width="24" style="filter:invert(1)"></small>
+                        </div>
+                       </a>
+
+
+
+                  </div>
+                </div>
+
+               </div>
+         </div>
+         <div class="col-md-8">
+
+            <h1 class="text-white text-4xl mb-4">  Why do we use it?</h1>
+            <p class="text-white mb-4">
+               It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point   normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+               </p>
+               <p class="text-white mb-4">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                  </p>
+
+         </div>
+
+
+      </div>
+   </div>
+</section>
+
+
+
+
+{% comment %}
+
+<section class="py-40">
+   <div class="container">
+            <h3 class="w-100 d-block text-5xl   mb-20 text-white text-center">İçindekiler</h3>
+      <div class="row">
+         <div class="w-full border border-gray-200 rounded-lg" x-data="{selected:1}">
+
+
+            <ul class="shadow-box">
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">UPay Hizmet Alanı</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300">- Unlimited Payment global de film endüstrisine hizmet verirken ödemeleri kolaylaştırıyor ve Metaverse, Web3, Film Endüstrisi ile hizmet vermeye hazırlanıyor.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 2 ? selected = 2 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">İçindekiler</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300">
+                          <ul>
+                            <li class="text-white">- Misyon-Vizyon</li>
+                            <li class="text-white">- Piyasanın ve Problemin Tanıtımı</li>
+                            <li class="text-white">- UPay'in Genel Açıklaması ve Bahsi Geçen Problemlerin Nasıl Çözüleceği</li>
+                            <li class="text-white">- UPay'in Arzı, Neden, Ne Şekilde, Ne Zaman Sunulacak?</li>
+                            <li class="text-white">- Toplanan Yatırım Nasıl Kullanılacak</li>
+                          </ul>
+                          </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 3 ? selected = 3 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">Misyon ve Vizyon</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                       <p class="text-gray-300">
+                         <b>Misyon</b> : Film sektörü içerisindeki platformlarda kullanıcıların yapacağı işlemleri blockchain
+ teknolojisi ile en kolay ve en uygun maliyetli bir şekilde gerçekleştirerek Unlimited Payment
+ kullanıcılarının ve yatırımcılarının beklentilerini en üst seviyede karşılamak.
+</p>
+                        <p class="text-gray-300">
+                          <b>Vizyon</b> : Dünya genelindeki film Networklerinde Blockchain veritabanlı ödemelerde bir numaralı
+                          ve piyasa değeri en yüksek ödeme birimi olmak.
+</p>
+
+
+
+
+
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 4 ? selected = 4 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">Piyasanın ve Problemin Tanıtımı</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300">  Blockcahin sektörü içerisindeki kripto paralar sektörler arası ödemeleri kolaylaştırırken. ETicaret, Oyun, Güvenlik gibi büyük alanlarda ilerleme kaydetme sağlamışken Film Sektörü
+ödemeler için istenilen bir şekilde kaydedilememiş olmasından dolayı UPay Film sektöründeki
+ödemeleri kolaylaştırmak, transferleri hızlandırmak ve bu işlemleri yaparken kullanıcı ve
+yatırımcılarına tasarruf sağlamayı hedeflemektedir.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 5 ? selected = 5 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white"> UPay'in Genel Açıklaması ve Bahsi Geçen Problemlerin Nasıl Çözüleceği</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 5 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300"> Unlimited Payment Visa , MasterCard gibi şirketler ile anlaşarak film sektörü içerisindeki
+ödemeleri kolaylaştırmayı hedeflemektedir. Unlimited Payment'ın ortaklık kurduğu sinema
+salonlarına, dijital platformlara, üye olurken insanların ödeme yapmasını kolaylaştırırken daha
+uygun GAS FEE ücretleri ile ödeme yapmasını sağlar. Unlimited Payment film endüstrisi
+içerisinde yer alırken yalnızca kullanıcı ödemelerini kolaylaştırmakla kalmayarak ortaklık
+kuracağı film şirketleri ile film şirketlerinin çekeceği prodüksiyonlar içeirsinde film proje
+ekibinin ve oyuncularının ücretlerini ödeme imkanı sunmaktadır. Yalnızca film şirketleri ile
+anlaşmalı kalmayarak Unlimited Payment dijital de ve metaverse evreninde kendi
+prodüksiyonlarını kurmayı hedeflemektedir.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 6 ? selected = 6 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">Unlimited Payment'ın Problemleri Nasıl Çözeceği</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 6 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300">Unlimited Payment ödemeleri kolaylaştırıken anlaşacağı şirketler ile birlikte UPayCard'ı
+kuracak ve böylece UPay sahipleri ortaklık kurulan platformlara girebilecekler.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 7 ? selected = 7 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">UPay'in Arzı, Neden, Ne Şekilde, Ne Zaman Sunulacak?</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 7 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300">Unlimited Payment'ın toplam token arzı 82.000.000 olmakla beraber proje hedefli ve globalde
+kısa zaman diliminde büyük bir etki uyandırmak için sınırlı miktarda ve az bir şekilde tutuldu.
+UPay tokenleri ise kendi web sitesinde ICO düzenleyerek veya ortaklık kurulan bir borsa ile ön
+satış yaparak alacağı tohum yatırım ile yol haritası üzerinde çalışmalarına başlayacak.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="relative border-b border-gray-200">
+                  <button type="button" class="w-full px-8 py-3 text-left" @click="selected !== 8 ? selected = 8 : selected = null">
+                     <div class="flex items-center justify-between">
+                        <strong class="text-white">Toplanan Yatırım Nasıl Kullanılacak</strong>
+                        <span class="ico-plus"></span>
+                     </div>
+                  </button>
+                  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 8 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                     <div class="p-6">
+                        <p class="text-gray-300">Unlimited Payment ICO ile istenen hedefe ulaşılması ve ön satışın tamamlanması durumunda</p> <br>
+
+                          <div class="liste">
+                            <ul>
+                              <li class="text-white">- 2.500.000 $'lık fon toplanmakta. Unlimited Payment ekibi ise bu fonu şu şekilde kullanacak.</li>
+                              <li class="text-white">- 800.000 $ Global Borsa Listelemeleri</li>
+                              <li class="text-white">- 400.000 $ UPayCard</li>
+                              <li class="text-white">- 400.000 $ UPayLand ve Metaverse Evrenindeki Film Platoları</li>
+                              <li class="text-white">- 70.000 $ Unlimited Payment Ofisi</li>
+                              <li class="text-white">- 200.000 $ Unlimited Payment Ekibi ve Yeni Ekip Üyeleri</li>
+                              <li class="text-white">- 200.000 $ Unlimited Payment Prodüksiyon Şirketi</li>
+                              <li class="text-white">- 430.000 $ Global Marka Ortaklıkları</li>
+
+                            </ul>
+
+                          </div>
+
+
+
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+<style media="screen">
+strong {
+  font-size: 22px;
+}
+  .liste p {
+     background-color: #eee;
+        font-size: 15px;
+     width: 100%;
+     margin: 10px auto;
+     padding: 15px;
+     border-right: 5px solid #000000;
+     position: relative;
+     counter-increment: number;
+ }
+
+
+.liste p::before {
+     content: counter(number);
+     background-color: #000000;
+     border-left: 1px solid #EBD671;
+     border-radius: 5px;
+     padding: 15px;
+     color: white;
+     position: absolute;
+     left: -30px;
+     top: 0px;
+ }
+</style>
+{% endcomment %}
+
+{% endblock %}
