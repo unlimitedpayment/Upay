@@ -66,22 +66,7 @@ WSGI_APPLICATION = 'site_setting.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'unlimited',
-        'USER': 'unlimited',
-        'PASSWORD': 'oe&0100Eb',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'autocommit':True,
 
-        }
-
-    }
-
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
